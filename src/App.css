@@ -1,0 +1,130 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light-mode {
+  background-color: #e0f7fa; /* Light cyan background */
+  color: #004d40; /* Dark teal text */
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: inherit;
+  border-bottom: 1px solid currentColor;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.theme-toggle-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #00796b; /* Teal background */
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+.theme-toggle-button:hover {
+  background-color: #004d40; /* Dark teal background */
+}
+
+.main-content {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px); /* Full height minus header */
+  background: linear-gradient(to right, #80deea, #e0f7fa); /* Light cyan gradient */
+  transition: background 0.3s;
+}
+
+.dark-mode .main-content {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Light background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.dark-mode .auth-buttons {
+  background: rgba(18, 18, 18, 0.8); /* Dark background */
+}
+
+.button {
+  padding: 15px 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.signup-button {
+  background-color: #00796b; /* Teal background */
+  color: white;
+}
+
+.signup-button:hover {
+  background-color: #004d40; /* Dark teal background */
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.signup-button:focus {
+  outline: 2px solid #004d40;
+  outline-offset: 2px;
+}
+
+.signup-button:active {
+  background-color: #004d40;
+  transform: scale(0.95);
+  box-shadow: none;
+}
+
+.signin-button {
+  background-color: #4dd0e1; /* Light teal background */
+  color: #004d40; /* Dark teal text */
+}
+
+.signin-button:hover {
+  background-color: #0097a7; /* Dark teal background */
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.signin-button:focus {
+  outline: 2px solid #004d40;
+  outline-offset: 2px;
+}
+
+.signin-button:active {
+  background-color: #0097a7;
+  transform: scale(0.95);
+  box-shadow: none;
+}
